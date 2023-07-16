@@ -17,6 +17,7 @@ C[k]*=j;
 for(j=n-k;j>=2;j--) 
 C[k]/=j;
 }
+}
 void computeBezPt(float u, point *pt1, int cPt, point *pt2, int *C)
 {
 int k, n=cPt-1; 
@@ -40,7 +41,7 @@ bino(cPt-1, C);
 glBegin(GL_LINE_STRIP); 
 for(k=0; k<=bPt; k++)
 {
-u=float(k)/float(bpt);
+u=float(k)/float(bPt);
 computeBezPt(u, &bcPt, cPt, pt1, C);
 glVertex2f(bcPt.x,bcPt.y);
 }
