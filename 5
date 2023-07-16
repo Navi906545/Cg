@@ -53,22 +53,22 @@ x = xmax;
 }
 else
 {
-}
 y = y0 + (y1 - y0) * (xmin - x0)/(x1 - x0); 
 x = xmin;
+}
 if (outcodeOut == outcode0)
 {
-}
-else
-{
-}
-}
 x0 = x; 
 y0 = y;
 outcode0 = ComputeOutCode (x0, y0);
+}
+else
+{
 x1 = x; 
 y1 = y;
 outcode1 = ComputeOutCode (x1, y1);
+}
+}
 }while (!done);
 if (accept)
 {
