@@ -77,10 +77,7 @@ gluOrtho2D(0.0,499.0,0.0,499.0);
 }
 void fillMenu(int option)
 {
-if(option==1)
-fillFlag=1; 
-if(option==2)
-fillFlag=2; 
+fillFlag = option;
 display();
 }
 void main(int argc, char* argv[])
