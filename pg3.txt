@@ -85,13 +85,13 @@ Toast.makeText(MainActivity.this,"Password Does not match the rules",
 Toast.LENGTH_LONG).show();
 return;
 } 
-});
-} 
-} 
 Intentintent = new Intent(MainActivity.this, LoginActivity.class); 
 intent.putExtra("email", email);
 intent.putExtra("password", password); 
 startActivity(intent);
+}
+});
+}
 Pattern lowercase = Pattern.compile("^.*[a-z].*$"); 
 Pattern uppercase = Pattern.compile("^.*[A-Z].*$"); 
 Pattern number = Pattern.compile("^.*[0-9].*$"); 
