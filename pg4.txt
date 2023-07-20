@@ -1,4 +1,4 @@
-XML-CODE
+fXML-CODE
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
 xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -94,4 +94,10 @@ wpm.setBitmap(wallpaper);
 e.printStackTrace();
 } 
 } 
-},0,30000); } } 
+},0,30000); } 
+private class MyOnClickListener impliments view.OnClickListener{
+@Override public void onClick(View view){setWallpaper();}
+}
+} 
+//mainfaist.xml
+4 <Uses-permission android:name="android.permission.SET_WALLPAPER"/>
